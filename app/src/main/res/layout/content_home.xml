@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior" tools:showIn="@layout/home"
+    tools:context=".Home">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:id="@+id/linearLayout"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/addACoffeeBtn"
+                style="@android:style/Holo.Light.ButtonBar"
+                android:layout_width="100dp"
+                android:layout_height="140dp"
+                android:layout_gravity="center"
+                android:layout_margin="2dp"
+                android:drawableTop="@drawable/ic_add_location"
+                android:onClick="add"
+                android:text="@string/addACoffeeLbl" />
+
+            <Button
+                android:id="@+id/searchCoffeesBtn"
+                style="@android:style/Holo.Light.ButtonBar"
+                android:layout_width="100dp"
+                android:layout_height="140dp"
+                android:layout_margin="2dp"
+                android:drawableTop="@drawable/ic_list"
+                android:text="@string/searchCoffeesLbl"
+                android:layout_gravity="center" />
+
+            <Button
+                android:id="@+id/favouritesCoffeeBtn"
+                style="@android:style/Holo.Light.ButtonBar"
+                android:layout_width="100dp"
+                android:layout_height="140dp"
+                android:layout_margin="2dp"
+                android:drawableTop="@drawable/ic_favourite_off"
+                android:text="@string/favouritesCoffeeLbl"
+                android:layout_gravity="center" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/recentAddedBarTextView"
+            style="@style/banner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/recentlyViewedLbl"
+            android:layout_gravity="center_vertical"
+            android:gravity="center" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+            <ListView
+                android:id="@+id/recentlyAddedList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/footerLinearLayout"
+                android:layout_alignParentTop="true" />
+
+            <TextView
+                android:id="@+id/recentlyAddedListEmpty"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="@string/recentlyViewedListEmptyMessage"
+                android:textColor="@color/appFontColor"
+                android:layout_above="@+id/footerLinearLayout" />
+
+            <LinearLayout
+                android:id="@+id/footerLinearLayout"
+                style="@style/footer"
+                android:background="@color/bannerBGColor"
+                android:layout_width="fill_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="10dip"
+                    android:text="@string/appWebsite"
+                    android:textColor="@color/bgColor" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

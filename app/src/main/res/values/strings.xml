@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">CoffeeMate.1.0</string>
+    <string name="action_settings">Settings</string>
+    <string name="appHelpTitle">CoffeeMate Help</string>
+    <string name="appHelp">This is the help screen for CoffeeMate</string>
+    <string name="appHelpExtra">Basically\, if you need help on using this app, you probably shouldn\'t be using it</string>
+    <string name="appDisplayName">CoffeeMate 1.0</string>
+    <string name="appDesc">CoffeeMate provides the user with a quick and easy way to manage a list of coffees and your favourite coffees.</string>
+    <string name="appMoreInfo">For more information about CoffeeMate or to provide feedback please visit our website.</string>
+    <string name="appAbout">About CoffeeMate</string>
+    <string name="appWebsite">vanarragon.ca</string>
+    <string name="developer">Developed by Ben Vanarragon</string>
+
+    <string name="versionLabel">Current Version:</string>
+    <string name="version">1</string>
+
+    <string name="searchCoffeesLbl">Search Coffee\'s</string>
+    <string name="favouritesCoffeeLbl">Favourite Coffee\'s</string>
+    <string name="addACoffeeLbl">Coffee Check In</string>
+    <string name="addCoffeeBtnLbl">Add Coffee</string>
+    <string name="saveCoffeeBtn">Save Coffee</string>
+    <string name="recentlyViewedLbl">Recently Added Coffee\'s</string>
+    <string name="coffeeNameLbl">Name :</string>
+    <string name="coffeeShopLbl">Shop :</string>
+    <string name="coffeePriceLbl">Price :</string>
+    <string name="coffeeRatingLbl">Star Rating</string>
+    <string name="coffeeDetailsLbl">Full Coffee Details</string>
+    <string name="searchCoffeeNameHint">Enter a Coffee Title </string>
+    <string name="informationLbl">Information</string>
+    <string name="recentlyViewedListEmptyMessage">You have no Coffee\'s added, go have a coffee!</string>
+</resources>

@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".Home">
+
+    <item android:id="@+id/menu_info"
+        android:icon='@drawable/about'
+        android:title="Info"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:onClick="menuInfo"/>
+
+    <item android:id="@+id/menu_help"
+        android:icon="@drawable/help"
+        android:title="Help"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:onClick="menuHelp"/>
+
+    <item android:id="@+id/menu_home"
+        android:icon="@drawable/home"
+        android:title="Home"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"
+        android:onClick="menuHome"/>
+
+</menu>

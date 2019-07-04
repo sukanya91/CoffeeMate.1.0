@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#386289</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#386289</color>
+    <color name="colorFontPrimary">#ffffff</color>
+
+    <!-- Background Colours -->
+    <color name="appBGColor">#f8f9ff</color>
+    <color name="headerBGColor">#45719B</color>
+    <color name="bannerBGColor">#45719B</color>
+    <color name="activeRowBGColor">#ffcc00</color>
+    <color name="bgColor">#ffffff</color>
+    <color name="activeBGColor">#149B9B</color>
+    <color name="inactiveBGColor">#000000</color>
+    <color name="appFooterBGColor">#dedede</color>
+
+    <!-- Font Colours -->
+    <color name="appFontColor">#363737</color>
+    <color name="headerFontColor">#ffffff</color>
+    <color name="bannerFontColor">#ffffff</color>
+    <color name="activeFontColor">#ffffff</color>
+    <color name="inactiveFontColor">#cccccc</color>
+    <color name="pressedFontColor">#90b831</color>
+    <color name="appFooterFontColor">#606060</color>
+    <color name="textBGColor">#008FFE</color>
+
+</resources>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/appLayoutTheme"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        style="@style/appTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:id="@+id/footerLinearLayout"
+            style="@style/footer"
+            android:layout_alignParentBottom="true"
+            android:background="@color/bannerBGColor" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:text="@string/appWebsite"
+                android:textColor="@color/bgColor" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/saveCoffeeBtn"
+            style="@android:style/Holo.Light.ButtonBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/footerLinearLayout"
+            android:layout_centerHorizontal="true"
+            android:drawableTop="@drawable/ic_save_todo"
+            android:text="@string/saveCoffeeBtn"
+            android:onClick="onClick"/>
+
+        <RatingBar
+            android:id="@+id/coffeeRatingBar"
+            android:progressTint="@color/bannerBGColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:numStars="5"
+            android:rating="2"
+            android:stepSize="1" />
+
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/coffeeRatingBar"
+            android:ems="10"
+            android:inputType="textShortMessage" >
+
+            <requestFocus />
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/shopEditText"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/nameEditText"
+            android:layout_below="@+id/nameEditText"
+            android:ems="10"
+            android:inputType="textShortMessage" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/ratingTextView"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/coffeeRatingBar"
+            android:layout_marginLeft="20dp"
+            android:text="@string/coffeeRatingLbl"
+            android:textColor="@color/appFontColor"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/shopEditText"
+            android:gravity="top"
+            android:text="@string/coffeeNameLbl"
+            android:textColor="@color/appFontColor"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/priceEditText"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/shopEditText"
+            android:layout_below="@+id/shopEditText"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/shopTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/nameTextView"
+            android:layout_alignTop="@+id/shopEditText"
+            android:text="@string/coffeeShopLbl"
+            android:textColor="@color/appFontColor"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/priceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/shopTextView"
+            android:layout_alignTop="@+id/priceEditText"
+            android:text="@string/coffeePriceLbl"
+            android:textColor="@color/appFontColor"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
