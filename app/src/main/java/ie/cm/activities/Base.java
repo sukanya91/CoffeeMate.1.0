@@ -2,6 +2,7 @@ package ie.cm.activities;
 
 import java.util.ArrayList;
 
+import ie.cm.Settings;
 import ie.cm.models.Coffee;
 import ie.cm.R;
 import android.app.Activity;
@@ -53,4 +54,7 @@ public class Base extends AppCompatActivity {
 	}
 	public void menuHome(MenuItem m) {
 		goToActivity(this, Home.class, null); }
+
+	public void menuSettings(MenuItem m) {
+		goToActivity(this, Settings.class, null); }
 }

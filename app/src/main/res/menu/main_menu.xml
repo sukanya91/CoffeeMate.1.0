@@ -16,11 +16,19 @@
         app:showAsAction="never"
         android:onClick="menuHelp"/>
 
+    <item android:id="@+id/menu_settings"
+        android:orderInCategory="101"
+        android:title="Settings"
+        app:showAsAction="never"
+        android:onClick="menuSettings"/>
+
     <item android:id="@+id/menu_home"
         android:icon="@drawable/home"
         android:title="Home"
         android:orderInCategory="100"
         app:showAsAction="ifRoom"
-        android:onClick="menuHome"/>
+        android:onClick="menuHome" />
+
+
 
 </menu>
