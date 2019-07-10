@@ -82,11 +82,11 @@
             android:id="@+id/TextView01"
             android:layout_width="fill_parent"
             android:layout_height="70dp"
-            android:layout_alignParentLeft="true"
             android:layout_below="@+id/helpTextView"
+            android:layout_alignParentLeft="true"
             android:layout_marginLeft="5dp"
             android:gravity="top"
-            android:text="@string/appHelpExtra"
+            android:text="@string/settings_body"
             android:textColor="@color/appFontColor"
             android:textSize="16sp" />
 

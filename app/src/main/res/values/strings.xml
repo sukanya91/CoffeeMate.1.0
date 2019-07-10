@@ -30,5 +30,6 @@
     <string name="recentlyViewedListEmptyMessage">You have no Coffee\'s added, go have a coffee!</string>
     <string name="settings_title">CoffeeMate Settings</string>
     <string name="app_settings">This is the Settings screen of CoffeeMate</string>
+    <string name="settings_body">This is the Settings page which helps users to change settings options.</string>
 
 </resources>
